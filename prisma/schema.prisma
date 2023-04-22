@@ -17,7 +17,6 @@ model Example {
     updatedAt DateTime @updatedAt
 }
 
-// Necessary for Next auth
 model Account {
     id                String  @id @default(cuid())
     userId            String
@@ -60,4 +59,11 @@ model VerificationToken {
     expires    DateTime
 
     @@unique([identifier, token])
+}
+
+model Guestbook {
+    id        String   @id @default(cuid())
+    createdAt DateTime @default(now())
+    name      String
+    message   String   @db.VarChar(100)
 }
