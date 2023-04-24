@@ -1,6 +1,4 @@
 import { type Config } from "tailwindcss";
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -12,9 +10,7 @@ export default {
           "100%": { transform: "scale(0)" },
         },
       },
-      fontFamily: {
-        sans: ["var(--font-inter)", ...fontFamily.sans],
-      },
+      fontFamily: {},
     },
   },
   plugins: [],

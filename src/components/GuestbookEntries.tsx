@@ -4,6 +4,7 @@ import { LoadingSpinner } from "./LoadingSpinner";
 export const GuestbookEntries = () => {
   const { data: guestbookEntries, isLoading } = api.guestbook.getAll.useQuery();
 
+  console.log(guestbookEntries);
   if (isLoading) {
     return <LoadingSpinner />;
   }
