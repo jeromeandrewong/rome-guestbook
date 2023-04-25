@@ -18,13 +18,13 @@ const Home: NextPage = () => {
     <>
       <main className="flex h-screen justify-center">
         <div className="mx-10 flex h-full w-full flex-col items-center p-5 md:max-w-2xl">
-          <h1 className="pt-4 text-2xl">
+          <h1 className="pt-4 text-center text-2xl ">
             Rome&apos;s unoriginal{" "}
             <span className="text-purple-500">Guestbook </span>
           </h1>
-          <div className="flex w-full flex-col items-center pt-5">
+          <div className="flex w-full max-w-sm flex-col items-center pt-5">
             {session ? (
-              <div className="w-[30vh]">
+              <div className="w-full">
                 <div className="mb-5 flex items-center justify-between">
                   <p>
                     Welcome{" "}
@@ -57,10 +57,7 @@ const Home: NextPage = () => {
                 </button>
               </>
             )}
-            <div
-              className="pt-5
-            "
-            >
+            <div className="w-full pt-5">
               {" "}
               <GuestbookEntries />{" "}
             </div>
