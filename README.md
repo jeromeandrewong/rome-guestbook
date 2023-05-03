@@ -2,7 +2,7 @@
 - unoriginal guestbook app inspired by [leerob](https://leerob.io/guestbook)
 
 ## Techstack
-= Bootstrapped with [T3 stack](https://create.t3.gg/)
+ Bootstrapped with [T3 stack](https://create.t3.gg/)
 - [Next.js](https://nextjs.org)
 - [NextAuth.js](https://next-auth.js.org)
 - [Prisma](https://prisma.io)
